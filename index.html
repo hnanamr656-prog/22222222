@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASG Links</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #0a0a0a, #000);
+      color:#fff;
+      text-align:center;
+    }
+
+    .container{
+      max-width:420px;
+      margin:auto;
+      padding:25px;
+    }
+
+    /* اللوجو */
+    .logo img{
+      width:110px;
+      height:110px;
+      border-radius:50%;
+      margin:25px auto 10px;
+      display:block;
+      border:2px solid #00ffcc;
+      box-shadow:0 0 20px rgba(0,255,204,0.3);
+    }
+
+    h1{
+      font-size:18px;
+      margin-bottom:25px;
+      color:#00ffcc;
+      font-weight:bold;
+    }
+
+    /* الأزرار */
+    .link{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background: rgba(255,255,255,0.06);
+      border:1px solid rgba(255,255,255,0.1);
+      color:#fff;
+      text-decoration:none;
+      padding:15px;
+      margin:12px 0;
+      border-radius:18px;
+      transition:0.3s;
+      backdrop-filter: blur(6px);
+    }
+
+    .link:hover{
+      transform:scale(1.05);
+      border-color:#00ffcc;
+      background: rgba(0,255,204,0.08);
+    }
+
+    .link i{
+      color:#00ffcc;
+      font-size:18px;
+    }
+
+    /* أيقونات صغيرة فوق */
+    .icons{
+      margin:10px 0 20px;
+    }
+
+    .icons a{
+      color:#fff;
+      margin:0 10px;
+      font-size:22px;
+      transition:0.3s;
+    }
+
+    .icons a:hover{
+      color:#00ffcc;
+      transform:scale(1.2);
+    }
+
+    /* واتساب ثابت */
+    .whatsapp{
+      position:fixed;
+      bottom:20px;
+      left:20px;
+      background:#25D366;
+      color:#fff;
+      border-radius:50%;
+      width:58px;
+      height:58px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:26px;
+      box-shadow:0 0 15px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- اللوجو -->
+  <div class="logo">
+    <img src="logo.jpeg" alt="ASG Logo">
+  </div>
+
+  <!-- الاسم -->
+  <h1>مجموعة ASG أفضل منتجات بأفضل سعر</h1>
+
+  <!-- أيقونات -->
+  <div class="icons">
+    <a href="https://www.facebook.com/share/18VAmaaw3k/" target="_blank">
+      <i class="fab fa-facebook"></i>
+    </a>
+
+    <a href="https://vm.tiktok.com/ZS9LDyxJKUwce-u38nm/" target="_blank">
+      <i class="fab fa-tiktok"></i>
+    </a>
+  </div>
+
+  <!-- اللينكات -->
+  <a class="link" href="https://www.facebook.com/share/18VAmaaw3k/" target="_blank">
+    <span>فيسبوك</span>
+    <i class="fab fa-facebook"></i>
+  </a>
+
+  <a class="link" href="https://vm.tiktok.com/ZS9LDyxJKUwce-u38nm/" target="_blank">
+    <span>تيك توك</span>
+    <i class="fab fa-tiktok"></i>
+  </a>
+
+  <a class="link" href="https://wa.me/201507540976" target="_blank">
+    <span>واتساب 1</span>
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <a class="link" href="https://wa.me/201055351759" target="_blank">
+    <span>واتساب 2</span>
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</div>
+
+<!-- زر واتساب -->
+<a class="whatsapp" href="https://wa.me/201507540976" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
