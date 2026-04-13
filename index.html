@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@ body{
   text-align:center;
 }
 
-/* حركة خلفية */
+/* خلفية متحركة */
 body::before{
   content:"";
   position:fixed;
@@ -61,27 +61,7 @@ h1{
 .sub{
   font-size:12px;
   color:#aaa;
-  margin-bottom:15px;
-}
-
-/* زر اللغة */
-.lang-btn{
   margin-bottom:20px;
-}
-
-.lang-btn button{
-  background:transparent;
-  border:1px solid #00ffcc;
-  color:#00ffcc;
-  padding:8px 15px;
-  border-radius:20px;
-  cursor:pointer;
-  transition:0.3s;
-}
-
-.lang-btn button:hover{
-  background:#00ffcc;
-  color:#000;
 }
 
 /* أيقونات */
@@ -125,7 +105,7 @@ h1{
   color:#00ffcc;
 }
 
-/* فوتر */
+/* الفوتر */
 .footer{
   margin-top:25px;
   font-size:11px;
@@ -143,15 +123,10 @@ h1{
     <img src="logo.jpeg" alt="ASG Logo">
   </div>
 
-  <!-- العنوان -->
-  <h1 id="title">مجموعة ASG أفضل منتجات بأفضل سعر</h1>
+  <!-- العنوان عربي -->
+  <h1>مجموعة ASG أفضل منتجات بأفضل سعر</h1>
 
-  <div class="sub" id="sub">شحن لجميع المحافظات | دعم واتساب مباشر</div>
-
-  <!-- زر اللغة -->
-  <div class="lang-btn">
-    <button onclick="toggleLang()">EN / AR</button>
-  </div>
+  <div class="sub">شحن لجميع المحافظات | دعم واتساب مباشر</div>
 
   <!-- أيقونات -->
   <div class="icons">
@@ -164,54 +139,33 @@ h1{
     </a>
   </div>
 
-  <!-- روابط -->
-  <a class="link" id="fb" href="https://www.facebook.com/share/18VAmaaw3k/" target="_blank">
-    <span>فيسبوك</span><i class="fab fa-facebook"></i>
+  <!-- اللينكات (إنجليزي بس) -->
+  <a class="link" href="https://www.facebook.com/share/18VAmaaw3k/" target="_blank">
+    <span>Facebook</span>
+    <i class="fab fa-facebook"></i>
   </a>
 
-  <a class="link" id="tt" href="https://vm.tiktok.com/ZS9LDyxJKUwce-u38nm/" target="_blank">
-    <span>تيك توك</span><i class="fab fa-tiktok"></i>
+  <a class="link" href="https://vm.tiktok.com/ZS9LDyxJKUwce-u38nm/" target="_blank">
+    <span>TikTok</span>
+    <i class="fab fa-tiktok"></i>
   </a>
 
-  <a class="link" id="wa1" href="https://wa.me/201507540976" target="_blank">
-    <span>واتساب 1</span><i class="fab fa-whatsapp"></i>
+  <a class="link" href="https://wa.me/201507540976" target="_blank">
+    <span>WhatsApp 1</span>
+    <i class="fab fa-whatsapp"></i>
   </a>
 
-  <a class="link" id="wa2" href="https://wa.me/201055351759" target="_blank">
-    <span>واتساب 2</span><i class="fab fa-whatsapp"></i>
+  <a class="link" href="https://wa.me/201055351759" target="_blank">
+    <span>WhatsApp 2</span>
+    <i class="fab fa-whatsapp"></i>
   </a>
 
-  <div class="footer">© 2026 ASG | Designed with 💚</div>
+  <!-- الفوتر -->
+  <div class="footer">
+    © 2026 ASG | All Rights Reserved
+  </div>
 
 </div>
-
-<script>
-let isEN = false;
-
-function toggleLang(){
-  if(!isEN){
-    document.getElementById("title").innerText = "ASG Collection - Best Prices";
-    document.getElementById("sub").innerText = "Shipping available | WhatsApp support";
-
-    document.getElementById("fb").innerHTML = "<span>Facebook</span><i class='fab fa-facebook'></i>";
-    document.getElementById("tt").innerHTML = "<span>TikTok</span><i class='fab fa-tiktok'></i>";
-    document.getElementById("wa1").innerHTML = "<span>WhatsApp 1</span><i class='fab fa-whatsapp'></i>";
-    document.getElementById("wa2").innerHTML = "<span>WhatsApp 2</span><i class='fab fa-whatsapp'></i>";
-
-    isEN = true;
-  } else {
-    document.getElementById("title").innerText = "مجموعة ASG أفضل منتجات بأفضل سعر";
-    document.getElementById("sub").innerText = "شحن لجميع المحافظات | دعم واتساب مباشر";
-
-    document.getElementById("fb").innerHTML = "<span>فيسبوك</span><i class='fab fa-facebook'></i>";
-    document.getElementById("tt").innerHTML = "<span>تيك توك</span><i class='fab fa-tiktok'></i>";
-    document.getElementById("wa1").innerHTML = "<span>واتساب 1</span><i class='fab fa-whatsapp'></i>";
-    document.getElementById("wa2").innerHTML = "<span>واتساب 2</span><i class='fab fa-whatsapp'></i>";
-
-    isEN = false;
-  }
-}
-</script>
 
 </body>
 </html>
